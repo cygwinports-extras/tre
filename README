@@ -1,0 +1,118 @@
+tre
+-------------------------------------------
+TRE is a lightweight, robust, efficient, portable, and POSIX compliant 
+regexp matching library. Key features include the agrep command line 
+tool for approximate regexp matching in the style of grep, an 
+approximate matching library API, portability, wide character and 
+multibyte character support, binary pattern and data support, complete 
+thread safety, consistently efficient matching, low memory consumption 
+and small footprint, and strict standards conformance.
+
+Runtime requirements:
+  cygwin-1.5.19-4
+  libintl3-0.14.5-1
+  python-2.4.3-1    (for the Python bindings)
+
+Build requirements:
+(besides corresponding devel packages)
+  cygwin-1.5.19-4
+  autoconf2.5-2.59-3
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  cygport-0.2.0-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  libtool1.5-1.5.22-1
+  make-3.80-1
+  sed-4.1.4-1
+
+Canonical homepage:
+  http://laurikari.net/tre/
+
+-------------------------------------------
+
+Build instructions:
+  unpack tre-0.7.4-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./tre-0.7.4-X.cygport all
+
+This will create:
+  /usr/src/libtre4-0.7.4-X.tar.bz2
+  /usr/src/pytre-0.7.4-X-src.tar.bz2
+  /usr/src/tre-0.7.4-X-src.tar.bz2
+  /usr/src/tre-0.7.4-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the tre package:
+
+  /usr/bin/agrep.exe
+  /usr/include/tre/regex.h
+  /usr/include/tre/tre-config.h
+  /usr/lib/libtre.dll.a
+  /usr/lib/libtre.la
+  /usr/lib/pkgconfig/tre.pc
+  /usr/share/doc/Cygwin/tre-0.7.4.README
+  /usr/share/doc/tre-0.7.4/ABOUT-NLS
+  /usr/share/doc/tre-0.7.4/AUTHORS
+  /usr/share/doc/tre-0.7.4/ChangeLog
+  /usr/share/doc/tre-0.7.4/INSTALL
+  /usr/share/doc/tre-0.7.4/LICENSE
+  /usr/share/doc/tre-0.7.4/NEWS
+  /usr/share/doc/tre-0.7.4/README
+  /usr/share/doc/tre-0.7.4/THANKS
+  /usr/share/doc/tre-0.7.4/TODO
+  /usr/share/doc/tre-0.7.4/html/default.css
+  /usr/share/doc/tre-0.7.4/html/tre-api.html
+  /usr/share/doc/tre-0.7.4/html/tre-syntax.html
+  /usr/share/locale/fi/LC_MESSAGES/tre.mo
+  /usr/share/man/man1/agrep.1.gz
+
+Files included in the libtre4 package:
+
+  /usr/bin/cygtre-4.dll
+
+Files included in the pytre package:
+
+  /usr/lib/python2.4/site-packages/tre.dll
+  /usr/lib/python2.4/site-packages/tre.la
+
+------------------
+
+Port Notes:
+
+----- version 0.7.4-1 -----
+Version bump.
+
+----- version 0.7.3-1 -----
+Version bump, now LGPL licensed and with python bindings.
+Source package is now cygport driven.
+
+----- version 0.7.2-1 -----
+New upstream release.
+
+----- version 0.7.0-1 -----
+New upstream release, including new features in libtre; see ChangeLog 
+and NEWS.  Static libs are now disabled, and -devel files are now in the 
+main tre package.
+
+----- version 0.6.8-1 -----
+Upstream bugfix release.  See ChangeLog and NEWS files for details.
+
+----- version 0.6.7-1 -----
+New upstream minor release.
+
+----- version 0.6.6-1 -----
+New upstream release.
+
+----- version 0.6.5-1 -----
+Upstream bugfix release.  See ChangeLog for details.
+
+----- version 0.6.4-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
