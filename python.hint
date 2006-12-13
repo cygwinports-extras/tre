@@ -1,7 +1,7 @@
 category: Python
 requires: cygwin libtre4 python
 external-source: tre
-sdesc: "Python bindings for TRE regexp library"
+sdesc: "regexp matching library (Python bindings)"
 ldesc: "TRE is a lightweight, robust, efficient, portable, and POSIX 
 compliant regexp matching library. Key features include the agrep 
 command line tool for approximate regexp matching in the style of grep, 

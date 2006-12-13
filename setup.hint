@@ -1,6 +1,6 @@
 category: Utils
-requires: cygwin libintl3 libtre4
-sdesc: "regexp matching utility (includes agrep)"
+requires: cygwin libintl8 libtre4
+sdesc: "regexp matching library (agrep, docs)"
 ldesc: "TRE is a lightweight, robust, efficient, portable, and POSIX 
 compliant regexp matching library. Key features include the agrep 
 command line tool for approximate regexp matching in the style of grep, 

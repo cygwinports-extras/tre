@@ -9,22 +9,22 @@ thread safety, consistently efficient matching, low memory consumption
 and small footprint, and strict standards conformance.
 
 Runtime requirements:
-  cygwin-1.5.19-4
-  libintl3-0.14.5-1
+  cygwin-1.5.22-1
+  libintl8-0.15-1
   python-2.4.3-1    (for the Python bindings)
 
 Build requirements:
 (besides corresponding devel packages)
-  cygwin-1.5.19-4
-  autoconf2.5-2.59-3
-  automake1.9-1.9.6-1
-  binutils-20050610-1
-  cygport-0.2.0-1
+  cygwin-1.5.22-1
+  autoconf2.5-2.60-2
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  cygport-0.2.7-1
   gawk-3.1.5-2
   gcc-core-3.4.4-1
-  libtool1.5-1.5.22-1
-  make-3.80-1
-  sed-4.1.4-1
+  libtool1.5-1.5.23a-1
+  make-3.81-1
+  sed-4.1.5-2
 
 Canonical homepage:
   http://laurikari.net/tre/
@@ -32,56 +32,61 @@ Canonical homepage:
 -------------------------------------------
 
 Build instructions:
-  unpack tre-0.7.4-X-src.tar.bz2
+  unpack tre-0.7.5-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./tre-0.7.4-X.cygport all
+  cygport ./tre-0.7.5-X.cygport all
 
 This will create:
-  /usr/src/libtre4-0.7.4-X.tar.bz2
-  /usr/src/pytre-0.7.4-X-src.tar.bz2
-  /usr/src/tre-0.7.4-X-src.tar.bz2
-  /usr/src/tre-0.7.4-X.tar.bz2
+  /usr/src/libtre-devel-0.7.5-X.tar.bz2
+  /usr/src/libtre4-0.7.5-X.tar.bz2
+  /usr/src/pytre-0.7.5-X-src.tar.bz2
+  /usr/src/tre-0.7.5-X-src.tar.bz2
+  /usr/src/tre-0.7.5-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the tre package:
 
   /usr/bin/agrep.exe
+  /usr/share/doc/Cygwin/tre-0.7.5.README
+  /usr/share/doc/tre-0.7.5/ABOUT-NLS
+  /usr/share/doc/tre-0.7.5/AUTHORS
+  /usr/share/doc/tre-0.7.5/ChangeLog
+  /usr/share/doc/tre-0.7.5/INSTALL
+  /usr/share/doc/tre-0.7.5/LICENSE
+  /usr/share/doc/tre-0.7.5/NEWS
+  /usr/share/doc/tre-0.7.5/README
+  /usr/share/doc/tre-0.7.5/THANKS
+  /usr/share/doc/tre-0.7.5/TODO
+  /usr/share/doc/tre-0.7.5/html/default.css
+  /usr/share/doc/tre-0.7.5/html/tre-api.html
+  /usr/share/doc/tre-0.7.5/html/tre-syntax.html
+  /usr/share/locale/fi/LC_MESSAGES/tre.mo
+  /usr/share/locale/sv/LC_MESSAGES/tre.mo
+  /usr/share/man/man1/agrep.1.gz
+
+(libtre4)
+  /usr/bin/cygtre-4.dll
+
+(libtre-devel)
   /usr/include/tre/regex.h
   /usr/include/tre/tre-config.h
   /usr/lib/libtre.dll.a
   /usr/lib/libtre.la
   /usr/lib/pkgconfig/tre.pc
-  /usr/share/doc/Cygwin/tre-0.7.4.README
-  /usr/share/doc/tre-0.7.4/ABOUT-NLS
-  /usr/share/doc/tre-0.7.4/AUTHORS
-  /usr/share/doc/tre-0.7.4/ChangeLog
-  /usr/share/doc/tre-0.7.4/INSTALL
-  /usr/share/doc/tre-0.7.4/LICENSE
-  /usr/share/doc/tre-0.7.4/NEWS
-  /usr/share/doc/tre-0.7.4/README
-  /usr/share/doc/tre-0.7.4/THANKS
-  /usr/share/doc/tre-0.7.4/TODO
-  /usr/share/doc/tre-0.7.4/html/default.css
-  /usr/share/doc/tre-0.7.4/html/tre-api.html
-  /usr/share/doc/tre-0.7.4/html/tre-syntax.html
-  /usr/share/locale/fi/LC_MESSAGES/tre.mo
-  /usr/share/man/man1/agrep.1.gz
 
-Files included in the libtre4 package:
-
-  /usr/bin/cygtre-4.dll
-
-Files included in the pytre package:
-
+(pytre)
   /usr/lib/python2.4/site-packages/tre.dll
   /usr/lib/python2.4/site-packages/tre.la
 
 ------------------
 
 Port Notes:
+
+----- version 0.7.5-1 -----
+Version bump.
 
 ----- version 0.7.4-1 -----
 Version bump.

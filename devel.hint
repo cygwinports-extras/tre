@@ -1,7 +1,7 @@
 category: Libs
-requires: cygwin libintl8
+requires: cygwin gettext
 external-source: tre
-sdesc: "regexp matching library (runtime)"
+sdesc: "regexp matching library (development)"
 ldesc: "TRE is a lightweight, robust, efficient, portable, and POSIX 
 compliant regexp matching library. Key features include the agrep 
 command line tool for approximate regexp matching in the style of grep, 
