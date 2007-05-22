@@ -1,0 +1,14 @@
+DESCRIPTION="POSIX compliant regex with fuzzy matching"
+HOMEPAGE="http://laurikari.net/tre/"
+SRC_URI="http://laurikari.net/${PN}/${P}.tar.bz2"
+
+HTMLDOCS="doc/default.css doc/tre-syntax.html doc/tre-api.html"
+
+PKG_NAMES="${PN} lib${PN}4 lib${PN}-devel python-${PN}"
+PKG_HINTS="setup lib devel python"
+PKG_CONTENTS[0]='usr/bin/*.exe usr/share/'
+PKG_CONTENTS[1]='usr/bin/*.dll'
+PKG_CONTENTS[2]='--exclude=python* usr/include/ usr/lib/'
+PKG_CONTENTS[3]='usr/lib/python*'
+
+DIFF_EXCLUDES='m4'

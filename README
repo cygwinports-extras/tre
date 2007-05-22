@@ -9,20 +9,20 @@ thread safety, consistently efficient matching, low memory consumption
 and small footprint, and strict standards conformance.
 
 Runtime requirements:
-  cygwin-1.5.22-1
+  cygwin-1.5.24-2
   libintl8-0.15-1
-  python-2.4.3-1    (for the Python bindings)
+  python-2.5.1-1    (for the Python bindings)
 
 Build requirements:
 (besides corresponding devel packages)
-  cygwin-1.5.22-1
-  autoconf2.5-2.60-2
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.2.7-1
-  gawk-3.1.5-2
-  gcc-core-3.4.4-1
-  libtool1.5-1.5.23a-1
+  cygport-0.3.1-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
   make-3.81-1
   sed-4.1.5-2
 
@@ -41,7 +41,7 @@ Build instructions:
 This will create:
   /usr/src/libtre-devel-0.7.5-X.tar.bz2
   /usr/src/libtre4-0.7.5-X.tar.bz2
-  /usr/src/pytre-0.7.5-X-src.tar.bz2
+  /usr/src/python-tre-0.7.5-X-src.tar.bz2
   /usr/src/tre-0.7.5-X-src.tar.bz2
   /usr/src/tre-0.7.5-X.tar.bz2
 
@@ -77,13 +77,16 @@ Files included in the tre package:
   /usr/lib/libtre.la
   /usr/lib/pkgconfig/tre.pc
 
-(pytre)
+(python-tre)
   /usr/lib/python2.4/site-packages/tre.dll
   /usr/lib/python2.4/site-packages/tre.la
 
 ------------------
 
 Port Notes:
+
+----- version 0.7.5-2 -----
+Rebuilt for python-2.5.
 
 ----- version 0.7.5-1 -----
 Version bump.
