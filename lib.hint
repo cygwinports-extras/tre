@@ -1,5 +1,5 @@
 category: Libs
-requires: cygwin libintl8
+requires: libintl8
 external-source: tre
 sdesc: "regexp matching library (runtime)"
 ldesc: "TRE is a lightweight, robust, efficient, portable, and POSIX 

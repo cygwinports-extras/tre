@@ -1,5 +1,5 @@
 category: Python
-requires: cygwin libtre4 python
+requires: libtre4 python
 external-source: tre
 sdesc: "regexp matching library (Python bindings)"
 ldesc: "TRE is a lightweight, robust, efficient, portable, and POSIX 
